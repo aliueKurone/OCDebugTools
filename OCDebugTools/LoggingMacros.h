@@ -23,3 +23,4 @@
 #define LoggingException(ex) DebugLog(@"Exception Name: %@ Reason: %@", [ex name], [ex reason]);
 
 #define Deprecated __attribute__((deprecated("This method is deprecated")))
+#define DeprecatedWithMessage(msg) __attribute__((deprecated(msg)))
